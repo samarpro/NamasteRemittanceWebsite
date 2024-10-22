@@ -33,7 +33,7 @@ function Navbar() {
       <div className="navigators flex items-center gap-x-3 md:gap-x-3">
         <Button text="Login" className={'border rounded-md p-1 px-2 md:px-3 border-black '} link='https://namasteremittance.com.au/admin/login.php' />
         <Button text="Sign Up" className={'rounded-md p-2 px-5 text-white bg-gradient-to-l from-red-600 to-red-700 transition-all duration-[1000ms] ease-in-out hover:shadow-[0px_0px_10px_1px_rgba(255,0,51,1)] border hover:border hover:border-red-300'} link='https://namasteremittance.com.au/admin/register.php' />
-        <GiHamburgerMenu className="lg:hidden" style={{ fontSize: '30px' }} onClick={()=>console.log("Clicked")} />
+        <GiHamburgerMenu className="lg:hidden z-50" style={{ fontSize: '30px' }} onClick={()=>setNavState(true)} />
       </div>
     </header>
   )
