@@ -45,7 +45,7 @@ function FAQ() {
                 <div className="flex items-center ">
                   <FaPlus style={{ display: FAQcounter==id?"none":"inline-block", color: 'red', margin: "20px" }} onClick={()=>setFAQcounter(id)} />
                   <FaMinus style={{ display: FAQcounter===id?"inline-block":"none", color: 'red', margin: "20px" }} onClick={()=>setFAQcounter(1000)} />
-                  <h2 className="inline-block font-xl font-extrabold md:text-2xl ">{obj.question}</h2>
+                  <h2 className="inline-block font-xl font-bold text-slate-800 md:text-2xl ">{obj.question}</h2>
                 </div>
                 <p className={`p-2 pl-11 ${FAQcounter==id?"block":'hidden'} ease-out duration-1000`}  >{obj.answer}</p>
                 <hr />
@@ -66,7 +66,7 @@ function FAQ2(){
       <div className="text font-jakarta space-y-3 h-max">
         <h3 className="font-extrabold text-4xl lg:text-6xl ">Have a question?</h3>
         <p className="text-gray-500 lg:text-xl">We're just a click away!</p>
-        <Button text="Contact us" className={'rounded-md p-2 px-5 text-white bg-gradient-to-l from-red-600 to-red-700 transition-all duration-[1000ms] ease-in-out hover:shadow-[0px_0px_10px_1px_rgba(255,0,51,1)] border hover:border hover:border-red-300'} />
+        <Button text="Contact us" className={'rounded-md p-2 px-5 text-white bg-gradient-to-l from-red-400 to-rose-600 transition-all duration-[1000ms] ease-in-out hover:shadow-[0px_0px_10px_1px_rgba(255,0,51,1)] border hover:border hover:border-red-300'} />
       </div>
       <div id="images" className="images w-9/12 max-w-sm">
         <img src={Nepali1} alt="Send money to Nepal; Nepali boy - Namaste Remittance"  className="relative top-0 left-0 rounded-3xl rounded-br-sm shadow-[0px_20px_20px_10px_#d6d6d6] sm:w-44 lg:w-52 lg:rounded-tr-lg" />

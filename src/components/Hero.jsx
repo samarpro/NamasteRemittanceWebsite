@@ -14,8 +14,8 @@ function Hero() {
         <h1 className={`font-extrabold text-4xl md:text-5xl lg:text-6xl font-dmSans leading-[46px]`}>Send money <br /> home <span className={`${gradient_bg} bg-clip-text text-transparent`}>Fast,</span> and<br />at the <span className={`${gradient_bg} bg-clip-text text-transparent`}>Best Rates</span></h1>
 
         <div className='mt-9'>
-          <Button text="Send Money" className={'border rounded-md p-2 border-black mr-5 relative before:content-[" "] before:absolute before:w-full before:h-full z-30 before:-z-50 before:bg-black before:top-0 before:transition-all before:left-[100%] overflow-hidden transition-all duration-[200ms] hover:before:left-0 hover:text-white hover:border-white'} />
-          <Button text="Sign Up" className={'rounded-md p-2 px-5 text-white bg-gradient-to-l from-red-600 to-red-700 transition-all duration-[1000ms] ease-in-out hover:shadow-[0px_0px_10px_1px_rgba(255,0,51,1)] border hover:border hover:border-red-300'} />
+          <Button text="Send Money" className={'border rounded-md p-2 border-black mr-5 relative before:content-[" "] before:absolute before:w-full before:h-full z-30 before:-z-50 before:bg-black before:top-0 before:transition-all before:left-[100%] overflow-hidden transition-all duration-[200ms] hover:before:left-0 hover:text-white hover:border-white'} link="https://namasteremittance.com.au/admin/login.php" />
+          <Button text="Sign Up" className={'rounded-md p-2 px-5 text-white bg-gradient-to-l from-red-600 to-red-700 transition-all duration-[1000ms] ease-in-out hover:shadow-[0px_0px_10px_1px_rgba(255,0,51,1)] border hover:border hover:border-red-300'} link="https://namasteremittance.com.au/admin/register.php" />
         </div>
         {/* Google Logo */}
         <div className="review mt-5 flex">

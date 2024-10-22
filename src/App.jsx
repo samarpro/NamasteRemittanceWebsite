@@ -1,22 +1,31 @@
 import { useState } from 'react'
-import { Navbar, Hero, Why, AddServices, Review, FAQ, FAQ2 ,Footer } from './components'
+
+import FallBack from './components/FallBack'
+import Home from './components/Home'
+import {
+  createBrowserRouter,
+  RouterProvider
+} from 'react-router-dom'
+
+
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <>
+  const route = createBrowserRouter(
+    [
+      {
+        path:'/',
+        element: <Home />
+      },
+      {
+        path:'upcoming/',
+        element: < FallBack />
+      }
+    ]
+  )
 
-      <div className="Namaste-Remittance m-auto flex flex-col h-screen">
-        <Navbar />
-        <Hero />
-      </div>
-      <Why />
-      <AddServices />
-      <Review />
-      <FAQ />
-      <FAQ2 />
-      <Footer />
-    </>
+  return (
+    <RouterProvider router={route} />
   )
 }
 

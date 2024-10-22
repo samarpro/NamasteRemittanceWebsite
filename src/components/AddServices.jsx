@@ -13,8 +13,8 @@ function AddServices() {
         <hr className='sm:hidden' />
         <h2 className="font-martel text-2xl font-bold md:row-start-1 md:m-auto md:text-4xl lg:text-5xl">Download the app.</h2>
         <div className="img flex flex-wrap gap-4 justify-center items-center">
-          <img src={AppStore} alt="Namaste Remittance app store download" className="w-40 max-w-40 lg:w-48 lg:max-w-56 " />
-          <img src={PlayStore} alt="Namaste Remittance play store download" className='w-40 h-max lg:w-52' />
+          <a href="https://apps.apple.com/au/app/namaste-remittance/id1533623774"><img src={AppStore} alt="Namaste Remittance app store download" className="w-40 max-w-40 lg:w-48 lg:max-w-56 " /></a>
+          <a href="https://play.google.com/store/apps/details?id=com.namasteremittance"><img src={PlayStore} alt="Namaste Remittance play store download" className='w-40 h-max lg:w-52' /></a>
         </div>
       </section>
       <section className="space-y-10">

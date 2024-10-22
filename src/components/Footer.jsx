@@ -1,5 +1,9 @@
 import React from 'react'
 import Logo from '../assets/logo.png'
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 function Footer() {
   return (
@@ -13,8 +17,8 @@ function Footer() {
           <nav className='w-80 text-center md:text-left'>
             <ul>
               <li className='flex flex-col md:pl-14 font-inter '>
-                <a href="">Privacy Policy</a>
-                <a href="">User agreements</a>
+                <Link to="">Privacy Policy</Link>
+                <Link to="">User agreements</Link>
               </li>
             </ul>
           </nav>
@@ -24,11 +28,11 @@ function Footer() {
           <h2 className='font-jakarta text-xl font-extrabold'>Company</h2>
           <ul>
             <li className='flex flex-col font-inter'>
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Contact</a>
-              <a href="">Career</a>
-              <a href="">Become an affiliate</a>
+              <Link to="upcoming/">Home</Link>
+              <Link to="upcoming/">About</Link>
+              <Link to="upcoming/">Contact</Link>
+              <Link to="upcoming/">Career</Link>
+              <Link to="upcoming/">Become an affiliate</Link>
             </li>
           </ul>
         </nav>
@@ -37,16 +41,21 @@ function Footer() {
           <h2 className='text-xl font-extrabold font-jakarta' >Service</h2>
           <ul>
             <li className='flex flex-col font-inter '>
-              <a href="">Log in</a>
-              <a href="">Sign up</a>
-              <a href="">Rates & charges</a>
-              <a href="">Security</a>
+              <Link to="https://namasteremittance.com.au/admin/login.php">Log in</Link>
+              <Link to="https://namasteremittance.com.au/admin/register.php">Sign up</Link>
+              <Link to="https://namasteremittance.com.au/termcondition.php">Rates & charges</Link>
+              <Link to="https://namasteremittance.com.au/termcondition.php">Security</Link>
             </li>
           </ul>
         </nav>
 
         <section className='w-80 md:w-max text-center md:text-left'>
           <h2 className='text-xl font-extrabold font-jakarta' >Contact links</h2>
+          <div className="links flex  gap-x-3 justify-center">
+          <Link to="https://www.instagram.com/namaste_remittance/"><FaInstagram  style={{fontSize:'30px'}} /></Link>
+          <Link to="https://www.facebook.com/Namasteremittanc/"><FaFacebook  style={{fontSize:'30px'}} /></Link>
+          <Link to="##"><FaWhatsapp  style={{fontSize:'30px'}} /></Link>
+          </div>
         </section>
       </section>
       <p className="container m-auto text-center text-gray-400 ">
